@@ -38,6 +38,7 @@ Route::group([
     Route::post('CreateViva', 'UserController@CreateViva');
     Route::post('getVivaInfo', 'UserController@getVivaInfo');
     Route::post('updateViva', 'UserController@updateViva');
+    Route::post('SendMail', 'MailController@SendMail');
 });
 
 // $router->group([ 'prefix' => 'api'], function () use ($router) {
