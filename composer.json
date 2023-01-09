@@ -8,6 +8,7 @@
         "php": "^7.3|^8.0",
         "flipbox/lumen-generator": "^9.1",
         "gladcodes/keygen": "^1.1",
+        "illuminate/mail": "^9.46",
         "irazasyed/larasupport": "^1.7",
         "laravel/lumen-framework": "^8.0|^9.0",
         "php-open-source-saver/jwt-auth": "^2.0"

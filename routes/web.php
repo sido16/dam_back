@@ -40,6 +40,7 @@ Route::group([
     Route::post('updateViva', 'UserController@updateViva');
     Route::get('getAllViva', 'UserController@getAllViva');
     Route::post('deleteViva', 'UserController@deleteViva');
+    Route::post('SendMail', 'MailController@SendMail');
 });
 
 // $router->group([ 'prefix' => 'api'], function () use ($router) {
