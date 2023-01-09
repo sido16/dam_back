@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use App\Models\Viva;
 use Keygen\Keygen;
+use Illuminate\Support\Facades\Auth;
 
 
 
@@ -51,7 +52,16 @@ class UserController extends Controller
         }
         return $key;
     }   
+    
+    public function getAllViva(){
+        return Viva::where("User_Id",auth()->id()) 
+        ->get();
+    }
 
+    public function deleteViva(request $request){
+        return Viva::where('Id',$request->id)
+        ->delete();
+    }
 
 
     public function index()
